@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+   <head>
+      <title>Can AI use Turtle Graphics?</title>
+      <link type="text/css" rel="stylesheet" href="lib/turtle.css" />
+      <meta charset="utf-8">
+      <style>
+         #response-box {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            white-space: pre-wrap;
+            font-family: monospace;
+         }
+         textarea, input, button {
+            width: 100%;
+            margin-top: 5px;
+            padding: 5px;
+            font-size: 14px;
+         }
+         button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+         }
+         button:hover {
+            background-color: #2980b9;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="wrap">
+         <h1>Can AI use Turtle Graphics?</h1>
+         <div id="midcolumn">
+            <h4>Canvas <span id="coords"></span></h4>
+            <canvas id="turtlecanvas" width="700" height="700"></canvas>
+            <canvas id="imagecanvas" width="700" height="700" style="display:none"></canvas>
+         </div> 
+
+         <div id="rightcolumn">
+            <h4>OpenRouter API Key</h4>
+            <input type="text" id="apiKey" placeholder="Enter API Key" />
+
+            <h4>Your Turtle Prompt</h4>
+            <textarea id="promptInput" rows="5" placeholder="Enter your prompt here..."></textarea>
+
+            <button id="generateButton">Generate Turtle Figure</button>
+
+            <h4>Turtle AI Generated Code</h4>
+            <div id="response-box">AI Model Response/Code will appear here...</div>
+         </div> 
+      </div> 
+
+      <script type="text/javascript" src="lib/library.js"></script>
+      <script type="text/javascript" src="ai_turtle.js"></script>
+   </body>
+</html>
